@@ -22,19 +22,20 @@
     put: function(url, data, callback){
       return methods.request('put', url, data, callback);
     },
-    delete: function(url, data, callback){
-      return methods.request('delete', url, data, callback);
+    del: function(url, data, callback){
+      return methods.request('del', url, data, callback);
     },
     request: function(type, url, data, callback){
-      if (!/get|post|put|delete/.test(type)) return false;
+      if (!/get|post|put|del/.test(type)) return false;
       data = (data === undefined || data === null) ? '' : data;
+	  useCache = $.browser.msie ? false : true;
   
       $.ajax({
         type: type,
         url: url,
         data: data,
         dataType: 'json',
-        cache: false,
+        cache: useCache,
         complete: function(response){
           callback($.parseJSON(response.responseText));
         }
