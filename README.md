@@ -6,7 +6,7 @@ REST Webservice is a jQuery plugin that allows you to easily send get, post, put
 Download
 ---
 
-[Download Alert Shake] (https://github.com/adrazich/rest-webservice-jquery/downloads)
+[Download REST Webservice] (https://github.com/adrazich/rest-webservice-jquery/downloads)
 
 How to Use
 ---
