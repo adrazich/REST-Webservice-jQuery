@@ -17,7 +17,7 @@ How to Use
   $(document).ready(function(){
 	
 	// Send a GET request to get a user
-    $.webservice('get', '/api/user/adrazich', '', function(data){
+    $.webservice('get', '/user/adrazich', '', function(data){
 	  // there is a callback function you can use to get your data back
 	  console.log(data);
 	  
@@ -26,9 +26,10 @@ How to Use
 	});
   
 	// update a user sending a PUT request
-	$.webservice('put', '/api/user', { id: adrazich, name: 'Anna Drazich' }, function(data){
+	$.webservice('put', '/user', { id: 'adrazich', name: 'Anna Drazich' }, function(data){
 	  console.log(data);
 	});
+	
   });
 </script>
 ```
