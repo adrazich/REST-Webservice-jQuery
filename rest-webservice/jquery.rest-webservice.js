@@ -28,7 +28,7 @@
     request: function(type, url, data, callback){
       if (!/get|post|put|del/.test(type)) return false;
       data = (data === undefined || data === null) ? '' : data;
-	  useCache = $.browser.msie ? false : true;
+	  var useCache = $.browser.msie ? false : true;
   
       $.ajax({
         type: type,
