@@ -37,7 +37,7 @@ How to Use
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script src="rest-webservice/js/jquery.rest-webservice.js" type="text/javascript"></script>
+<script src="rest-webservice/jquery.rest-webservice.js" type="text/javascript"></script>
 ```
 
 Browser Support
