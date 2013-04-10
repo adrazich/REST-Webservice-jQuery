@@ -29,7 +29,8 @@
       if (!/get|post|put|del/.test(type)) return false;
       type = type == 'del' ? 'delete' : type;
       data = (data === undefined || data === null) ? '' : data;
-	  var useCache = $.browser.msie ? false : true;
+      
+      var useCache = /msie/.test(navigator.userAgent.toLowerCase()) ? false : true;
   
       $.ajax({
         type: type,
